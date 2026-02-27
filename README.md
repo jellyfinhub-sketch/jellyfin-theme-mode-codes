@@ -77,19 +77,18 @@ Found a bug or have a new theme idea? Feel free to open an issue or pull request
 
 All codes in this repository were created with the help of **Claude AI (by Anthropic)**. The ideas and concepts are original, but the code was generated with AI assistance.
 
-> ⚠️ You can still access settings by clicking on your **profile picture** in the top right corner.
 
 ---
 
 Made with ❤️ for the Jellyfin community
 
-Web:
+Web Version
 <img width="1440" height="772" alt="Bildschirmfoto 2026-02-24 um 20 06 12" src="https://github.com/user-attachments/assets/2121fadd-8d31-438a-a619-2083e0db818b" />
 
 Smarthphone App
 <img width="1290" height="2796" alt="Jelly Smarthphone" src="https://github.com/user-attachments/assets/0ad7f285-d969-4707-b5ed-05bbed9e10e9" />
 
-U can still have the possibility to go to the setting view pressing on ur picture on the right top
+ ⚠️ You can still access settings by clicking on your **profile picture** in the top right corner.
 <img width="1440" height="779" alt="Bildschirmfoto 2026-02-25 um 00 07 48" src="https://github.com/user-attachments/assets/d1b4d942-ead4-41cd-84e7-d0a0da66e91b" />
 
 
