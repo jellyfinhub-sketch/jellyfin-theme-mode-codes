@@ -19,6 +19,3 @@ This folder contains additional CSS tweaks that build on top of the **Ultrachrom
 
 4. Click **Save** and hard refresh your browser (Ctrl+Shift+R)
 
-**Then apply the tweaks from this folder:**
-1. Add the CSS from the `Branding` folder below the imports above
-2. Click **Save** and hard refresh your browser again
