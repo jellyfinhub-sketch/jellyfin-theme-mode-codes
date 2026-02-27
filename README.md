@@ -48,6 +48,22 @@ In general, most tweaks follow this pattern:
 
 - Jellyfin 10.9.x or higher
 - Admin access to your Jellyfin server
+- 
+## 🔌 Required Plugins
+
+The tweaks in this repository are designed to work together with the following plugins. Make sure to install the ones you need before applying the code!
+
+**Plugins used in this theme:**
+
+| Plugin | Link |
+|---|---|
+| ⭐ Jellyfin Ratings | https://github.com/K3ntas/jellyfin-plugin-ratings |
+| ✨ Jellyfin Enhanced | https://github.com/n00bcodr/Jellyfin-Enhanced |
+| 🗂️ Custom Tabs | https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs |
+| 🔧 KefinTweaks | https://github.com/ranaldsgift/KefinTweaks |
+| 🍂 Jellyfin Seasonals | https://github.com/CodeDevMLH/Jellyfin-Seasonals |
+| 🎬 Editor's Choice | https://github.com/lachlandcp/jellyfin-editors-choice-plugin |
+| 🔧 File Transformation | https://github.com/IAmParadox27/jellyfin-plugin-file-transformation |
 
 ---
 
