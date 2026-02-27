@@ -40,7 +40,6 @@ In general, most tweaks follow this pattern:
 
 > ⚠️ Some folders require additional plugins or scripts to be installed first — make sure to read the instructions inside each folder carefully before applying any code!
 
-> ⚠️ You can still access settings by clicking on your **profile picture** in the top right corner.
 
 ---
 
@@ -75,7 +74,10 @@ Found a bug or have a new theme idea? Feel free to open an issue or pull request
 
 ## 🤖 Note
 
+
 All codes in this repository were created with the help of **Claude AI (by Anthropic)**. The ideas and concepts are original, but the code was generated with AI assistance.
+
+> ⚠️ You can still access settings by clicking on your **profile picture** in the top right corner.
 
 ---
 
