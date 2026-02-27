@@ -1,1 +1,27 @@
-https://github.com/CodeDevMLH/Jellyfin-Seasonals
+### 🍂 Jellyfin-Seasonals
+
+This folder contains additional CSS tweaks that work together with the **Jellyfin Seasonals** project by CodeDevMLH.
+
+> ⚠️ **You need to install Jellyfin Seasonals first before using these tweaks!**
+> 👉 [https://github.com/CodeDevMLH/Jellyfin-Seasonals](https://github.com/CodeDevMLH/Jellyfin-Seasonals)
+
+The Jellyfin Seasonals project automatically adds seasonal animations to your Jellyfin interface based on the current date, including:
+- ❄️ Snowflakes & Snowfall (December/January)
+- 💙 Hearts (February - Valentine's Day)
+- 🍂 Autumn leaves (October)
+- 🎃 Halloween (October)
+- 🎆 Fireworks (New Year)
+- 🎅 Santa & Christmas themes
+
+**How to install Jellyfin Seasonals:**
+1. Open the link above and follow the installation instructions
+2. Edit the `index.html` file of your Jellyfin web instance
+3. Add the seasonal container and script inside the `<body>` tag
+4. Deploy the seasonals folder to your Jellyfin web directory
+5. Restart Jellyfin and hard refresh your browser (Ctrl+Shift+R)
+
+**Then apply the tweaks from this folder:**
+1. Go to your Jellyfin **Admin Dashboard** in your web browser
+2. Navigate to **Dashboard → General → Custom CSS**
+3. Copy & paste the CSS from the `Jellyfin-Seasonals` folder
+4. Click **Save** and hard refresh your browser
