@@ -24,9 +24,6 @@ The Jellyfin Enhanced plugin is one of the most popular Jellyfin plugins (976 �
 4. Go to the **Catalog** tab, find **Jellyfin Enhanced** and click **Install**
 5. Restart your Jellyfin server
 
-**Then apply the tweaks from this folder:**
-1. Navigate to **Dashboard → General → Custom CSS**
-2. Copy & paste the CSS from the `Jellyfin Enhanced` folder
-3. Click **Save** and hard refresh your browser (Ctrl+Shift+R)
+
 
 > ⚠️ Requires **Jellyfin 10.11+**
