@@ -1,1 +1,28 @@
-https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs
+### 🗂️ Custom Tab
+
+This folder contains CSS tweaks that work together with the **Custom Tabs** plugin by IAmParadox27.
+
+> ⚠️ **You need to install the Custom Tabs plugin first before using these tweaks!**
+> 👉 [https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs](https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs)
+
+The Custom Tabs plugin lets you add your own tabs to the top navigation bar in Jellyfin — a common use case is adding a **"Requests"** tab that links to Jellyseerr or Overseerr.
+
+> ⚠️ Also requires the **File Transformation** plugin:
+> 👉 [https://github.com/IAmParadox27/jellyfin-plugin-file-transformation](https://github.com/IAmParadox27/jellyfin-plugin-file-transformation)
+
+**How to install Custom Tabs:**
+1. Go to your Jellyfin **Admin Dashboard** in your web browser
+2. Navigate to **Dashboard → Plugins → Repositories**
+3. Click ➕ and add this repository URL:
+```
+   https://www.iamparadox.dev/jellyfin/plugins/manifest.json
+```
+4. Go to the **Catalog** tab, find **Custom Tabs** and click **Install**
+5. Also install the **File Transformation** plugin from the same catalog
+6. Restart your Jellyfin server
+7. Go to **Dashboard → My Plugins → Custom Tabs** to configure your tabs
+
+**Then apply the tweaks from this folder:**
+1. Navigate to **Dashboard → General → Custom CSS**
+2. Copy & paste the CSS from the `Custom Tab` folder
+3. Click **Save** and hard refresh your browser (Ctrl+Shift+R)
