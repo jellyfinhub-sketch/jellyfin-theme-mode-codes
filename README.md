@@ -1,4 +1,63 @@
-"Transform your Jellyfin into a beautiful custom interface! Use the CSS and JavaScript codes provided to completely redesign your Jellyfin homepage. Works on both web browser and smartphone app. Important: To activate the watchlist and other features, make sure to disable the cache in your browser's developer settings."
+# 🎨 Jellyfin Theme Mode Codes
+
+A collection of CSS and JavaScript customizations to completely transform your Jellyfin interface. Works on both **web browser** and **smartphone app**.
+
+> 💡 **Tip:** To activate the watchlist and other features, make sure to **disable the cache** in your browser's developer settings.
+
+---
+
+## ✨ What's included
+
+| Folder | Description |
+|---|---|
+| `Jellyfin Enhanced` | Full UI overhaul with custom styling |
+| `Jellyfin-Seasonals` | Seasonal themes (holidays, events, etc.) |
+| `Modular Home` | Redesigned modular home screen layout |
+| `Home screen` | Custom home screen tweaks |
+| `Bookmarks Home` | Adds a bookmarks section to the home screen |
+| `Custom Tab` | Add custom tabs to the navigation bar |
+| `Icon Home Watchlist` | Adds a watchlist icon to the home screen |
+| `Branding` | Custom branding / logo replacements |
+| `Kefintweaks` | Various small UI tweaks and improvements |
+| `Remove Setting Button` | Hides the settings button from the UI |
+| `Removes Search Button` | Hides the search button from the UI |
+| `Screencast Button` | Customizes the screencast button |
+| `jellyfin-plugin-ratings` | Displays ratings in the UI |
+
+---
+
+## 🚀 How to use
+
+1. Go to your Jellyfin **Admin Dashboard**
+2. Navigate to **Dashboard → General → Custom CSS**
+3. Copy & paste the CSS code from the folder you want
+4. For JavaScript tweaks, go to **Dashboard → General → Custom JavaScript**
+5. Save and **hard refresh** your browser (Ctrl+Shift+R / Cmd+Shift+R)
+
+> ⚠️ You can still access settings by clicking on your **profile picture** in the top right corner.
+
+---
+
+## 📋 Requirements
+
+- Jellyfin 10.9.x or higher
+- Admin access to your Jellyfin server
+
+---
+
+## 🤝 Contributing
+
+Found a bug or have a new theme idea? Feel free to open an issue or pull request!
+
+---
+
+## 🤖 Note
+
+All codes in this repository were created with the help of **Claude AI (by Anthropic)**. The ideas and concepts are original, but the code was generated with AI assistance.
+
+---
+
+Made with ❤️ for the Jellyfin community
 
 Web:
 <img width="1440" height="772" alt="Bildschirmfoto 2026-02-24 um 20 06 12" src="https://github.com/user-attachments/assets/2121fadd-8d31-438a-a619-2083e0db818b" />
