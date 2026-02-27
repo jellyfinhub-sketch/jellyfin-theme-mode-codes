@@ -1,3 +1,9 @@
+### 🏠 Home Screen
+
+This folder contains additional CSS tweaks for the home screen layout.
+
+To activate the icons for the home tab bar, paste the following code into **Dashboard → General → Branding → Custom CSS**:
+```css
 /* Home Tab */
 .emby-tab-button.tab-home::before {
     content: "home";
@@ -5,7 +11,6 @@
     font-size: 28px;
     margin-right: 10px;
 }
-
 /* Favoriten Tab */
 .emby-tab-button.tab-favorites::before {
     content: "favorite";
@@ -13,7 +18,6 @@
     font-size: 28px;
     margin-right: 10px;
 }
-
 /* Watchlist Tab */
 .emby-tab-button.tab-watchlist::before {
     content: "bookmark";
@@ -21,7 +25,6 @@
     font-size: 28px;
     margin-right: 10px;
 }
-
 /* Bookmark+ Tab */
 .emby-tab-button.tab-bookmarkadd::before {
     content: "bookmark_add";
@@ -30,3 +33,14 @@
     font-size: 28px;
     margin-right: 10px;
 }
+```
+
+> ⚠️ **Important:** This code only works if your Jellyfin is set to **German language**!
+> If you use a different language, the tab class names (e.g. `tab-home`, `tab-favorites`) will be different.
+> You will need to **adjust the class names to match your language** — AI tools like Claude or ChatGPT can help you adapt the code to your language quickly!
+
+Click **Save** and hard refresh your browser (Ctrl+Shift+R).
+
+**Then apply the additional tweaks from this folder:**
+1. Add the CSS from the `Home screen` folder below the code above
+2. Click **Save** and hard refresh your browser again
