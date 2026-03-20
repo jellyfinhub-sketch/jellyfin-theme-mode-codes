@@ -1,15 +1,3 @@
-### 📌 Icon Home Watchlist
-
-This folder contains a JavaScript snippet that adds a **Bookmarks button** to the home tab bar, linking directly to the Jellyfin Enhanced bookmarks page.
-
-> ⚠️ **Requires the Jellyfin Enhanced plugin to be installed first!**
-> 👉 [https://github.com/n00bcodr/Jellyfin-Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced)
-
-**How to apply:**
-1. Go to your Jellyfin **Admin Dashboard** in your web browser
-2. Navigate to **Dashboard → General → Custom JavaScript**
-3. Paste the following code:
-```js
 document.addEventListener('viewshow', function() {
     setTimeout(function() {
         const bookmarkTab = document.getElementById('customTabButton_1');
@@ -24,7 +12,3 @@ document.addEventListener('viewshow', function() {
     }, 1000);
 });
 ```
-
-4. Click **Save** and hard refresh your browser (Ctrl+Shift+R)
-
-
