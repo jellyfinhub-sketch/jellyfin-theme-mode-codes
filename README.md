@@ -21,7 +21,7 @@ A collection of CSS and JavaScript customizations to completely transform your J
 | `Kefintweaks` | Various small UI tweaks and improvements |
 | `Remove Setting Button` | Hides the settings button from the UI |
 | `Removes Search Button` | Hides the search button from the UI |
-| `Screencast Button` | Customizes the screencast button |
+| `Screencast Button` | Readd the screencast button |
 | `jellyfin-plugin-ratings` | Displays ratings in the UI |
 
 ---
