@@ -6,51 +6,125 @@
 @import url('https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/episodelist/episodes_compactlist.css');
 @import url("https://cdn.jsdelivr.net/gh/intro-skipper/intro-skipper-css@main/skip-button.min.css");
 
-/* Home Tab */
-.emby-tab-button.tab-home::before {
-    content: "home";
-    font-family: 'Material Icons';
-    font-size: 28px;
-    margin-right: 10px;
+:root { --skip-hide-duration: 8s; }
+
+.skinHeader, .skinHeader-withBackground,
+.skinHeader.focuscontainer-x, .skinHeader-blurred {
+  overflow: visible !important;
+  height: auto !important;
+  min-height: unset !important;
 }
 
-/* Favoriten Tab */
-.emby-tab-button.tab-favorites::before {
-    content: "favorite";
-    font-family: 'Material Icons';
-    font-size: 28px;
-    margin-right: 10px;
+.headerTabs.sectionTabs { scrollbar-width: none !important; }
+.headerTabs.sectionTabs::-webkit-scrollbar { display: none !important; }
+
+.emby-tab-button {
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  padding: 8px 18px !important;
+  flex-shrink: 0 !important;
 }
 
-/* Watchlist Tab */
-.emby-tab-button.tab-watchlist::before {
-    content: "bookmark";
-    font-family: 'Material Icons';
-    font-size: 28px;
-    margin-right: 10px;
+.jf-tab-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; height: 24px;
+  opacity: 0.65;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
 }
+.jf-tab-icon svg { width: 24px; height: 24px; fill: currentColor; display: block; }
 
-/* Bookmark+ Tab */
-.emby-tab-button.tab-bookmarkadd::before {
-    content: "bookmark_add";
-    font-family: 'Material Symbols Rounded';
-    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    font-size: 28px;
-    margin-right: 10px;
+.emby-tab-button-active .jf-tab-icon,
+.emby-tab-button:hover .jf-tab-icon { opacity: 1; transform: scale(1.12); }
+
+.emby-tab-button > span:not(.jf-tab-icon),
+.emby-tab-button > .emby-button-text { display: block; line-height: 1.2; }
+
+/* Calender-Tab in dieselbe Reihe zwingen */
+#indexPage .emby-tabs-slider {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
+  overflow-x: auto !important;
 }
-
-:root {
-    --skip-hide-duration: 8s;
+#jf-cal-tab {
+  flex-shrink: 0 !important;
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 @media (max-width: 600px) {
+  .headerTabs.sectionTabs {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    width: 100% !important;
+  }
+
+  /* Unterseiten: 4 Tabs à 25vw */
+  body.jf-subpage .headerTabs.sectionTabs .emby-tab-button {
+    min-width: 25vw !important;
+    max-width: 25vw !important;
+    width: 25vw !important;
+    padding: 6px 0 !important;
+    gap: 3px !important;
+    scroll-snap-align: start !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Startseite: 5 Tabs à 20vw */
+  #indexPage .emby-tabs-slider .emby-tab-button {
+    min-width: 20vw !important;
+    max-width: 20vw !important;
+    width: 20vw !important;
+    padding: 6px 0 !important;
+    gap: 3px !important;
+    scroll-snap-align: start !important;
+    box-sizing: border-box !important;
+  }
+
+  body.jf-subpage .jf-tab-icon,
+  body.jf-subpage .jf-tab-icon svg { width: 18px !important; height: 18px !important; }
+  body.jf-subpage .emby-tab-button { font-size: 11px !important; }
+
+  body:not(.jf-subpage) .jf-tab-icon,
+  body:not(.jf-subpage) .jf-tab-icon svg { width: 22px !important; height: 22px !important; }
+
+  .card { overflow: hidden !important; position: relative !important; }
+
+  .cardOverlayContainer {
+    position: absolute !important; inset: 0 !important;
+    overflow: hidden !important; display: flex !important;
+    align-items: flex-end !important; justify-content: flex-end !important;
+    padding: 4px !important; box-sizing: border-box !important;
+  }
+
   button.cardOverlayButton.paper-icon-button-light {
-    width: 26px !important;
-    height: 26px !important;
-    min-width: 26px !important;
-    padding: 2px !important;
+    width: 26px !important; height: 26px !important;
+    min-width: 26px !important; padding: 3px !important;
+    position: relative !important;
   }
-  button.cardOverlayButton.paper-icon-button-light .material-icons {
-    font-size: 14px !important;
+  button.cardOverlayButton.paper-icon-button-light .material-icons { font-size: 15px !important; }
+
+  .cardOverlayButton-hover.itemAction[data-action="link"] {
+    position: absolute !important;
+    top: 50% !important; left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 38px !important; height: 38px !important;
   }
+  .cardOverlayButton-hover.itemAction[data-action="link"] .material-icons { font-size: 22px !important; }
+}
+/* Nur nativen "Demnächst"-Tab ausblenden, Custom-Tabs verschonen */
+.emby-tab-button:not([id^="customTabButton"])[data-index="2"] {
+  display: none !important;
 }
